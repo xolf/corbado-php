@@ -10,8 +10,12 @@ class CorbadoClient
 
     }
 
-    public function verify_webhook(): bool
+    public function verify_webhook(?\Psr\Http\Message\RequestInterface $request): bool
     {
+        if ($request) {
+            return $request->getHeader('Authorization') === 'Basic '.base64_decode($this->webhook_user.':'.$this->webhook_password);
+        }
+
         return ($_SERVER['PHP_AUTH_USER'] ?? null) === $this->webhook_user && ($_SERVER['PHP_AUTH_PW'] ?? null) ===  $this->webhook_password;
     }
 
