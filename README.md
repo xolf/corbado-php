@@ -27,5 +27,5 @@ If you use Composer, these dependencies should be handled automatically. If you 
 ## Getting started
 Simple usage looks like:
 ```php
-$corbado = new \Corbado\CorbadoClient('secret_key');
+$corbado = new \Corbado\CorbadoClient('secret_key', 'webhook_user', 'webhook_password');
 ```
