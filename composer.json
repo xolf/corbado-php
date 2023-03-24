@@ -9,7 +9,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Xolf\\CorbadoPhp\\": "src/"
+            "Corbado\\": "src/"
         }
     },
     "authors": [
