@@ -1,0 +1,22 @@
+{
+    "name": "xolf/corbado-php",
+    "description": "PSR-7 compliant Corbado client",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xolf\\CorbadoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "xolf",
+            "email": "info@xolf.info"
+        }
+    ],
+    "minimum-stability": "stable"
+}
